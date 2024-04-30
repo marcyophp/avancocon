@@ -206,11 +206,23 @@ figure{
   border-bottom-left-radius: 5rem;
 }
 .img-col-2n-1 {
+  position: relative;
   width: 100%;
-  height: 50vh;
-  overflow: hidden;
+  min-height: 350px;
   border: 1px #ccc solid;
+  overflow: hidden;
 }
+
+.img-plus {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    height: auto;
+  
+}
+
 .logo-shopee{
   width: 180px;
 }
@@ -370,12 +382,23 @@ button:hover{
     column-count: 2;
   }
   
+  .img-plus {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 120%;
+    height: auto;
+  
+}
+  
   .cards .card{
     break-inside: avoid;
   }
   
 }
 @media (max-width: 740px){
+  
   
   .cards{
     display: block;
@@ -489,3 +512,5 @@ button:hover{
 .img-cover {
   width: 100%;
 }
+
+
