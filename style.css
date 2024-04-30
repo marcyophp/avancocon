@@ -1,0 +1,491 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Inter Placeholder', sans-serif;
+  font-size: 1rem;
+  background: #fff;
+  color: #888888;
+}
+header{
+  min-height: 4rem;
+  border-bottom: 1px #ddd solid;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  position: fixed;
+  width: 100vw;
+  background: #fff;
+}
+.nav-mobile{
+  display: none;
+}
+.line{
+  width: 25px;
+  height: 2px;
+  background: #333;
+  margin-bottom: 4px;
+}
+header nav{
+  display: flex;
+  gap: 1rem;
+}
+header nav a{
+  text-decoration: none;
+  color: #888;
+  font-weight: 500;
+  transition: .3s ease-in-out;
+  border-bottom: 2px #fff solid;
+}
+header nav a:hover{
+  color: #c31a09;
+  border-bottom: 2px #c31a09 solid;
+}
+#hero{
+  background: rgba(0, 0, 0, 0.4);
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+#hero h1{
+  font-size: 3.125rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  max-width: 700px;
+  text-align: center;
+  padding: 0 .5rem;
+  z-index: 1;
+}
+#hero p{
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 2rem;
+  max-width: 700px;
+  margin-bottom: 1rem;
+  padding: 0 .5rem;
+  z-index: 1;
+}
+#hero .btn-group-hero{
+  padding: 1rem 0;
+  display: flex;
+  gap:1rem;
+}
+
+
+
+.btn-group-footer .btn-a-link{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  background: #33dd72;
+  padding: .7rem 1.5rem;
+  border-radius: .4rem;
+  transition: .3s ease-in-out;
+  text-align: center;
+  border-bottom: 4px #22bc5b solid;
+}
+.btn-group-footer .btn-a-link:hover{
+  background: #23cd62;
+  box-shadow: 0 2px 16px #aaa;
+  border-bottom: 4px #099f40 solid;
+}
+
+.btn-group-hero .btn-a-link{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  background: #f53f2c;
+  padding: .7rem 1.5rem;
+  border-radius: .4rem;
+  transition: .3s ease-in-out;
+  text-align: center;
+  border-bottom: 4px #f53f2c solid;
+}
+.btn-group-hero .btn-a-link:hover{
+  background: #c31a09;
+  box-shadow: 0 2px 16px #aaa;
+  border-bottom: 4px #f54f3e solid;
+}
+.btn-group-hero .btn-a-link-b{
+  background: #8a746a;
+  border-bottom: 4px #8a746a solid;
+}
+.btn-group-hero .btn-a-link-b:hover{
+  background: #cecece;
+  color: #333;
+  border-bottom: 4px #523b31 solid;
+}
+.sec-title{
+  text-align: center;
+  padding: 1rem;
+  min-height: 13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sec-title h2{
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 3.125rem;
+  padding: .5rem;
+  color: #333;
+}
+.sec-title p{
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  padding: .5rem;
+}
+.sobre {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 1rem auto;
+  gap:4rem;
+}
+.sobre h3{
+  font-size: 3.125rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.sobre p{
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  margin-bottom: 2rem;
+}
+.container{
+  margin: 0 auto;
+  padding: .5rem;
+}
+.col{
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  margin-right: -4px;
+  margin-bottom: 1rem;
+}
+.col-form{
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+.col-2{
+  width: 50%;
+  padding: 1rem 1rem 2rem 1rem;
+}
+.col-form-2{
+  width: 50%;
+  padding: 1rem 0rem 2rem 1rem;
+}
+.img-responsive {
+  width: 125%;
+}
+.text-right {
+  text-align: right;
+}
+figure{
+  border-top-right-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+}
+.img-col-2n-1 {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  border: 1px #ccc solid;
+}
+.logo-shopee{
+  width: 180px;
+}
+.loja {
+  text-align: center;
+  background: #ff5b02 url('medias/bg.jpg') repeat-x center top;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+}
+.loja h2{
+  color: #fff;
+  font-size: 3.125rem;
+  padding: .5rem;
+}
+.loja p{
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  padding: .5rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  column-count: 4;
+  max-width: 1170px;
+  margin: 0 auto;
+  column-gap: 1rem;
+  margin-top: 3rem;
+}
+
+.img-card {
+  width: 100%;
+  overflow: hidden;
+  border-radius: .5rem;
+  text-align: center;
+  border: none;
+  border-bottom: 1px #ccc solid;
+}
+.cards .card{
+  background: #fff;
+  border-radius: .5rem;
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+  break-inside: avoid-column;
+}
+.cards h3{
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.30rem;
+  text-align: left;
+  margin-top: .8rem;
+  padding: 1rem;
+}
+.cards p{
+  color: #888;
+  font-size: 1rem;
+  line-height: 1.40rem;
+  padding: .4rem 1rem;
+  text-align: left;
+}
+.card .btn-group-hero{
+  display: block;
+  text-align: left;
+  padding: 0 1rem;
+}
+.hero-video{
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}
+.case {
+  border: 1px #f3402c solid;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  break-inside: avoid;
+}
+.cases {
+  column-count: 3;
+  column-gap: 1rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  break-inside: avoid;
+  page-break-before: avoid;
+  padding: 1rem;
+}
+.case-title {
+  display: flex;
+}
+.case-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background: #ccc;
+  margin-right: 5px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.case-img .wonder-woman{
+  background: #fff url("medias/avatar/wonder-woman.jpg") no-repeat center top;
+}
+footer {
+  background: #ee8a47;
+}
+footer p{
+  color: #fff;
+}
+fieldset {
+  width: 100%;
+  border: none;
+  padding: .2rem;
+}
+form {
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  max-width: 500px;
+  text-align: center;
+}
+fieldset .left, right{
+  display: inline-block;
+  width: 50%;
+}
+.flex-input {
+  display: flex;
+}
+input, textarea,button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: .5rem;
+  font-family: 'Inter Placeholder', sans-serif;
+  font-size: 1rem;
+  outline: none;
+}
+button{
+  color: #fff;
+  background: #333;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+button:hover{
+  background: #555;
+}
+
+::placeholder{
+  color: #ccc;
+}
+
+@media (max-width: 1100px){
+  .cards{
+    display: block;
+    column-count: 2;
+  }
+  
+  .cards .card{
+    break-inside: avoid;
+  }
+  
+}
+@media (max-width: 740px){
+  
+  .cards{
+    display: block;
+    column-count: 2;
+    column-gap: 2rem;
+  }
+  
+  .cards .card{
+    break-inside: avoid;
+  }
+  
+  .nav-mobile{
+    display: block;
+    cursor: pointer;
+  }
+  
+  .col-2{
+    width: 100%;
+  }
+  
+  #hero h1{
+    font-size: 2.5rem;
+    padding: 0 .5rem;
+  }
+  
+  #hero p{
+    font-size: 1rem;
+    line-height: 1.3rem;
+    padding: .5rem;
+    color:#fff;
+  }
+  
+  header nav .link-nav{
+    display: none;
+  }
+  
+  #hero .btn-group-hero{
+    flex-direction: column;
+  }
+}
+@media (max-width: 660px){
+  
+  .cards{
+    display: block;
+    column-count: 1;
+    column-gap: 2rem;
+  }
+  
+  .cards .card{
+    break-inside: avoid;
+  }
+  
+  .cases{
+    column-count: 2;
+  }
+}
+@media (max-width: 420px){
+  
+  .cards{
+    display: block;
+    column-count: 1;
+    column-gap: 2rem;
+  }
+  
+  .cards .card{
+    break-inside: avoid;
+  }
+  
+  .cases{
+    column-count: 1;
+  }
+}
+
+.logomarca {
+  height: 33px;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.wpp {
+  background: #23cd62;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: fixed;
+  right: 1.2rem;
+  bottom: 1.5rem;
+  z-index: 5;
+  box-shadow: 0 5px 10px #333;
+}
+
+.wpp-i{
+  position: absolute;
+  font-size: 2rem;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-group-footer {
+  padding: 2rem 2rem 3rem 2rem;
+}
+
+.img-cover {
+  width: 100%;
+}
